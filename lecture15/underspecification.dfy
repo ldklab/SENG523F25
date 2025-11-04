@@ -1,4 +1,4 @@
-method Index(n: int) returns (i: int)
+method MinusOne(n: int) returns (i: int)
   requires 1 <= n
   ensures 0 <= i < n
 {
@@ -7,8 +7,8 @@ method Index(n: int) returns (i: int)
 
 method EqualityTest()
 {
-  var x := Index(50);
-  var y := Index(50);
+  var x := MinusOne(50);
+  var y := MinusOne(50);
 
   assert x == y;
 }
